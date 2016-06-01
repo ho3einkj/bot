@@ -472,146 +472,136 @@ will return group ban list
 
 ]],
 	help_text_super =[[
-SuperGroup Commands:
+دستورات سوپر گروه:
 
 !info
-Displays general info about the SuperGroup
+نماش اطلاعات عمومی گروه
 
 !admins
-Returns SuperGroup admins list
+لیست ادمین های گروه
 
 !owner
-Returns group owner
+نماش مالک گروه
 
 !modlist
-Returns Moderators list
+لیست مدیران گروه
 
 !bots
-Lists bots in SuperGroup
+لیست بات های گروه
 
 !who
-Lists all users in SuperGroup
+لیست اعضای سوپرگروه
 
 !block
-Kicks a user from SuperGroup
-*Adds user to blocked list*
+اخراج و  بلاک یوزر از گروه
 
 !ban
-Bans user from the SuperGroup
+بن کردن یوزر 
 
 !unban
-Unbans user from the SuperGroup
+انبن کردن یوزر
 
 !id
-Return SuperGroup ID or user id
-*For userID's: !id @username or reply !id*
+ای دی گروه و یوزر
+[*ایدی یوزر با ریپلی]
+
 
 !id from
-Get ID of user message is forwarded from
+ایدی شخصی که پیامش فوروارد شده است
 
 !kickme
-Kicks user from SuperGroup
-*Must be unblocked by owner or use join by pm to return*
+اخراج کردن فرد از گروه
 
 !setowner
-Sets the SuperGroup owner
+تنظیم فرد به عنوان مالک اصلی گروه
 
 !promote [username|id]
-Promote a SuperGroup moderator
+برگزیدن فرد به عنوان ادمین
 
 !demote [username|id]
-Demote a SuperGroup moderator
+تنظیم فرد به عنوان یوزر معمولی
+[بر عکس promote]
 
 !setname
-Sets the chat name
+تنظیم اسم برای گروه
 
 !setphoto
-Sets the chat photo
+تنظیم عکس برای گروه
 
 !setrules
-Sets the chat rules
+تنظیم قوانین برای گروه
 
 !setabout
-Sets the about section in chat info(members list)
+تنظیم درباره در اطلاعات چت
 
 !save [value] <text>
-Sets extra info for chat
+ذخیره متن
 
 !get [value]
-Retrieves extra info for chat by value
+فراخوانی متن ذخیره شده
 
 !newlink
-Generates a new group link
+لینک جدید
+[در ضورتی که بات سازنده گروه باشد]
 
 !link
-Retireives the group link
+نمایش لینک گروه
 
 !rules
-Retrieves the chat rules
+نمایش قوانین
 
 !lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Lock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
-*strict: enable strict settings enforcement (violating user will be kicked)*
+قفل تنظیمات گروه
+[rtl تایپ راست به چپ است]
 
 !unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Unlock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
-*strict: disable strict settings enforcement (violating user will not be kicked)*
+باز کردن قفل تنظیمات گروه
 
 !mute [all|audio|gifs|photo|video|service]
-mute group message types
-*A "muted" message type is auto-deleted if posted
+ساکت کردن انواع فورمت های
+[در صورت دادن ان نوع پیام پیام حذف میشود]
 
 !unmute [all|audio|gifs|photo|video|service]
-Unmute group message types
-*A "unmuted" message type is not auto-deleted if posted
-
+باز کردن سکوت فورمت های موجود
 !setflood [value]
-Set [value] as flood sensitivity
+میزان حساسیت به اسپم
 
 !settings
-Returns chat settings
+تنظیمات
 
 !muteslist
-Returns mutes for chat
+نمایش لیست فورمت های ساکت شده
 
 !muteuser [username]
-Mute a user in chat
-*If a muted user posts a message, the message is deleted automaically
-*only owners can mute | mods and owners can unmute
+ساکت کردن یک کاربر
+[در صورت دادن پیام پیام حذف میشود]
 
 !mutelist
-Returns list of muted users in chat
+نمایش لیست افراد ساکت شده
 
 !banlist
-Returns SuperGroup ban list
+لیست افراد بن شده
 
 !clean [rules|about|modlist|mutelist]
+پاک کردن قوانین درباره لیست مدیران و لیست ساکت شدگان
 
 !del
-Deletes a message by reply
+پاک کردن پیام با ریپلی
 
 !public [yes|no]
-Set chat visibility in pm !chats or !chatlist commands
+عمومی کردن چت
 
 !res [username]
-Returns users name and id by username
-
+نمایش یوزرنیم و ایدی فرد
 
 !log
-Returns group logs
-*Search for kick reasons using [#RTL|#spam|#lockmember]
+نمایش گزارشات گروه
 
-**You can use "#", "!", or "/" to begin all commands
+**شما میتوانید از علامت های /#! استفاده کنید
 
-*Only owner can add members to SuperGroup
-(use invite link to invite)
+BalutBot V1.1
 
-*Only moderators and owner can use block, ban, unban, newlink, link, setphoto, setname, lock, unlock, setrules, setabout and settings commands
-
-*Only owner can use res, setowner, promote, demote, and log commands
-
+با تشکر فراوان از mizbanservers.com
 ]],
   }
   serialize_to_file(config, './data/config.lua')
